@@ -3,114 +3,189 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BR Power Generators | Sales, Rental, AMC & DG Services</title>
-<meta name="description" content="BR Power Generators in Bengaluru provides generator sales, rental, installation, AMC, maintenance and DG servicing. Call +91-9845247595.">
-<meta name="keywords" content="BR Power Generators, generator sales Bengaluru, DG rental Bengaluru, generator AMC, DG servicing, generator installation">
-<meta name="theme-color" content="#071a33">
+<title>BR Power Generators | Reliable Power Solutions in Bengaluru</title>
+<meta name="description" content="BR Power Generators, Bengaluru — generator sales, rental, AMC, installation and DG servicing. Call +91-9845247595.">
+<meta name="keywords" content="generator sales Bengaluru, generator rental Bengaluru, DG servicing, generator AMC, generator installation, BR Power Generators">
+<meta name="theme-color" content="#061a31">
 <style>
+:root{--navy:#061a31;--blue:#0b3b63;--yellow:#ffc400;--green:#18a957;--ink:#10233b;--muted:#64748b;--bg:#f5f8fb;--white:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,Helvetica,sans-serif;color:#172033;background:#fff;line-height:1.6}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
 a{text-decoration:none;color:inherit}
 .container{width:min(1180px,92%);margin:auto}
-.topbar{background:#071a33;color:#dce7f5;font-size:13px;padding:9px 0}
-.topbar .container{display:flex;justify-content:flex-end;gap:25px;flex-wrap:wrap}
-header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 3px 18px #071a3318}
+
+/* TOP CONTACT BAR — remains visible on mobile */
+.topbar{background:var(--navy);color:#fff;font-size:12px;border-bottom:1px solid #29435e}
+.topbar .container{min-height:38px;display:flex;align-items:center;gap:22px;white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.topbar .container::-webkit-scrollbar{display:none}
+.top-item{display:inline-flex;align-items:center;gap:7px;flex:0 0 auto}
+.top-item svg{width:15px;height:15px;fill:var(--yellow)}
+.top-item a:hover{color:var(--yellow)}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:1000;background:#fff;box-shadow:0 4px 22px rgba(6,26,49,.10)}
 .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.logo{display:flex;align-items:center;gap:11px}
-.logo-mark{width:52px;height:52px;border-radius:12px;background:#071a33;position:relative;display:grid;place-items:center;overflow:hidden;box-shadow:0 5px 14px #071a3326}
-.logo-mark:before{content:"";position:absolute;width:23px;height:34px;background:#ffc400;clip-path:polygon(55% 0,100% 0,68% 35%,94% 35%,25% 100%,40% 51%,5% 51%)}
-.logo-text{font-weight:900;color:#071a33;line-height:1}
-.logo-text b{display:block;font-size:22px;letter-spacing:-1px}
-.logo-text span{font-size:10px;letter-spacing:1.8px;color:#35506f}
-.links{display:flex;align-items:center;gap:27px}
-.links a{font-weight:700;font-size:14px;color:#23344d}
-.links a:hover{color:#d49400}
-.nav-cta{background:#ffc400!important;color:#071a33!important;padding:12px 19px;border-radius:7px}
-.menu{display:none;border:0;background:none;font-size:28px;color:#071a33}
-.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#06172e 0%,#0d3155 52%,#183f62 100%);color:#fff}
-.hero:after{content:"";position:absolute;right:-100px;bottom:-170px;width:650px;height:430px;background:#ffc400;transform:rotate(-15deg);opacity:.95}
-.hero .container{position:relative;z-index:2;min-height:625px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:30px}
-.eyebrow{color:#ffc400;font-weight:900;letter-spacing:2.2px;font-size:13px;text-transform:uppercase}
-.hero h1{font-size:clamp(42px,5vw,72px);line-height:1.03;margin:15px 0 20px;letter-spacing:-2px}
-.hero h1 span{color:#ffc400}
-.hero p{font-size:18px;color:#dbe7f2;max-width:600px}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 22px;border-radius:7px;font-weight:900;border:1px solid transparent}
-.btn-yellow{background:#ffc400;color:#071a33}
-.btn-dark{border-color:#dce7f5;color:#fff}
-.btn-dark:hover{background:#fff;color:#071a33}
-.trust{display:flex;gap:25px;flex-wrap:wrap;margin-top:30px;color:#e7f0f8;font-size:13px;font-weight:700}
-.trust span:before{content:"✓";color:#ffc400;font-size:18px;margin-right:7px}
-.generator-art{height:430px;position:relative;display:flex;align-items:center;justify-content:center}
-.gen-shadow{position:absolute;bottom:60px;width:90%;height:45px;background:#0008;border-radius:50%;filter:blur(10px)}
-.generator{width:88%;height:230px;background:linear-gradient(#f7f9fb,#d4dae0);border:5px solid #0a2846;border-radius:8px;position:relative;box-shadow:0 25px 45px #0007}
-.generator:before{content:"";position:absolute;inset:18px 30% 18px 18px;border:2px solid #8795a4;border-radius:3px;background:repeating-linear-gradient(0deg,#d5dbe0 0 8px,#b6bec6 9px 11px)}
-.generator:after{content:"BR";position:absolute;left:43%;top:42%;font-size:42px;font-weight:1000;color:#0a2846;text-shadow:7px 0 #ffc400}
-.gen-top{position:absolute;top:-18px;left:0;right:0;height:17px;background:#1b6ba3;border-radius:5px 5px 0 0}
-.gen-wheel{position:absolute;width:50px;height:50px;border-radius:50%;background:#0b1725;bottom:-27px}
-.gen-wheel.one{left:12%}.gen-wheel.two{right:12%}
-.gen-side{position:absolute;right:-65px;bottom:45px;width:95px;height:165px;background:#c4cbd1;border:4px solid #0a2846;border-radius:6px}
-.gen-side i{display:block;height:9px;background:#8996a2;margin:16px 10px;box-shadow:0 16px #8996a2,0 32px #8996a2,0 48px #8996a2}
-.quick{background:#fff;position:relative;z-index:5;margin-top:-42px}
-.quick .container{background:#fff;box-shadow:0 12px 35px #071a3318;border-radius:10px;display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden}
-.quick-item{padding:23px 18px;border-right:1px solid #e7edf3;text-align:center}
-.quick-item:last-child{border:0}.quick-icon{font-size:25px;color:#0c4c80}.quick-item b{display:block;font-size:14px;color:#10243e}.quick-item small{color:#6c7d90}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{width:53px;height:53px;background:var(--navy);border-radius:11px;position:relative;overflow:hidden;display:grid;place-items:center}
+.logo-mark:before{content:"";position:absolute;width:25px;height:38px;background:var(--yellow);clip-path:polygon(55% 0,100% 0,67% 36%,94% 36%,23% 100%,40% 53%,4% 53%)}
+.logo-mark:after{content:"BR";position:absolute;color:#fff;font-size:18px;font-weight:1000;right:3px;bottom:7px;letter-spacing:-2px}
+.logo-name{font-weight:1000;color:var(--navy);font-size:21px;line-height:1}
+.logo-name small{display:block;color:#50677f;font-size:9px;letter-spacing:2px;margin-top:5px}
+.links{display:flex;align-items:center;gap:25px}
+.links a{font-size:14px;font-weight:750;color:#23364d}
+.links a:hover{color:#c28d00}
+.quote{background:var(--yellow)!important;color:var(--navy)!important;padding:12px 19px;border-radius:7px}
+.menu{display:none;border:0;background:none;font-size:28px;color:var(--navy);cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(105deg,#06172b 0%,#0b3152 57%,#16476b 100%);color:#fff;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-150px;bottom:-250px;width:650px;height:500px;background:var(--yellow);transform:rotate(-14deg);opacity:.95}
+.hero .container{min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;position:relative;z-index:2}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:2px;color:var(--yellow);text-transform:uppercase}
+.hero h1{font-size:clamp(43px,5vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:15px 0 20px}
+.hero h1 span{color:var(--yellow)}
+.hero p{font-size:17px;color:#d9e6f1;max-width:600px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 21px;border-radius:7px;font-weight:900;transition:.2s}
+.btn-yellow{background:var(--yellow);color:var(--navy)}
+.btn-yellow:hover{background:#ffd84d;transform:translateY(-2px)}
+.btn-outline{border:1px solid #dce8f2;color:#fff}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.trust{display:flex;gap:25px;flex-wrap:wrap;margin-top:27px;font-size:13px;font-weight:700;color:#e9f1f7}
+.trust span:before{content:"✓";color:var(--yellow);font-size:18px;margin-right:7px}
+
+/* GENERATOR ILLUSTRATION */
+.machine{height:420px;position:relative;display:flex;align-items:center;justify-content:center}
+.gen-shadow{position:absolute;bottom:62px;width:82%;height:35px;background:#0008;border-radius:50%;filter:blur(10px)}
+.generator{position:relative;width:84%;height:220px;background:linear-gradient(180deg,#fbfcfd,#d6dde3);border:5px solid #092947;border-radius:8px;box-shadow:0 25px 45px #0008}
+.generator .top{position:absolute;left:0;right:0;top:-18px;height:18px;background:#1772a9;border-radius:5px 5px 0 0}
+.generator .door{position:absolute;left:24px;top:25px;bottom:25px;width:46%;border:2px solid #9ba8b3;border-radius:3px;background:repeating-linear-gradient(0deg,#dce1e5 0 8px,#bbc4cb 9px 11px)}
+.generator .grill{position:absolute;right:25px;top:40px;width:27%;height:85px;background:repeating-linear-gradient(0deg,#7d8b98 0 5px,#d2d8dd 6px 10px);border:3px solid #a2adb7}
+.generator .brandmark{position:absolute;right:28px;bottom:28px;font-size:34px;font-weight:1000;color:#082542;letter-spacing:-3px}
+.generator .brandmark b{color:var(--yellow)}
+.wheel{position:absolute;width:45px;height:45px;border-radius:50%;background:#071421;border:5px solid #3e4d5a;bottom:-27px}
+.w1{left:12%}.w2{right:12%}
+
+/* QUICK SERVICES */
+.quick{position:relative;z-index:5;margin-top:-38px}
+.quick .container{background:#fff;border-radius:10px;box-shadow:0 12px 35px rgba(6,26,49,.13);display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden}
+.quick-item{text-align:center;padding:20px 12px;border-right:1px solid #e5ebf1}
+.quick-item:last-child{border:0}
+.quick-icon{font-size:25px;color:#0a4a78}.quick-item b{display:block;font-size:14px}.quick-item small{font-size:11px;color:var(--muted)}
+
+/* GENERAL */
 section{padding:82px 0}
-.section-title{text-align:center;max-width:720px;margin:0 auto 45px}
-.section-title .eyebrow{color:#c58a00}.section-title h2{font-size:38px;line-height:1.15;color:#0a1e36;margin:8px 0 12px}.section-title p{color:#64748b}
-.services{background:#f6f8fb}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid #e2e8ef;border-radius:11px;padding:28px;transition:.25s;box-shadow:0 7px 25px #071a3307}
-.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #071a3314;border-color:#ffc400}
-.card-icon{width:52px;height:52px;border-radius:10px;background:#fff5cc;color:#a36e00;display:grid;place-items:center;font-size:25px;margin-bottom:18px}
-.card h3{font-size:20px;color:#10243e;margin-bottom:8px}.card p{color:#66768a;font-size:15px}
-.about{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.about h2{font-size:40px;line-height:1.15;color:#0a1e36;margin:8px 0 18px}.about p{color:#64748b;margin-bottom:15px}
-.checks{list-style:none;margin-top:24px}.checks li{margin:11px 0;font-weight:800;color:#21334a}.checks li:before{content:"✓";color:#d39a00;margin-right:10px;font-size:19px}
-.panel{background:#071a33;color:#fff;border-radius:15px;padding:38px;position:relative;overflow:hidden}
-.panel:after{content:"";position:absolute;width:230px;height:230px;border:30px solid #ffc40033;border-radius:50%;right:-80px;top:-70px}
-.panel h3{font-size:28px;margin-bottom:10px}.panel p{color:#cbd9e7}.stats{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}.stat{padding:18px;background:#ffffff0d;border:1px solid #ffffff18;border-radius:9px}.stat b{display:block;color:#ffc400;font-size:25px}.stat span{font-size:12px;color:#c8d5e2}
-.cta{background:linear-gradient(100deg,#0a2340,#0c416b);color:#fff;text-align:center}.cta h2{font-size:40px}.cta p{color:#d1e0ec;margin:8px 0 22px}
-.contact{background:#f6f8fb}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.contact-card{background:#fff;border:1px solid #e0e7ef;border-radius:12px;padding:30px}.contact-card h3{color:#0a1e36;font-size:23px;margin-bottom:18px}
-.contact-line{display:flex;gap:14px;margin:18px 0;align-items:flex-start}.contact-line .ci{font-size:21px}.contact-line strong{display:block;color:#0a1e36}.contact-line span{color:#64748b}
-footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-brand{font-weight:900;color:#fff}
-.float-wa{position:fixed;right:20px;bottom:20px;background:#16a34a;color:#fff;border-radius:50px;padding:14px 19px;font-weight:900;z-index:999;box-shadow:0 8px 25px #0004}
-@media(max-width:900px){
-.topbar{display:none}.links{display:none;position:absolute;left:0;right:0;top:78px;background:#fff;padding:18px 5%;box-shadow:0 10px 25px #0002;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}
-.hero .container{grid-template-columns:1fr;padding-top:65px;padding-bottom:45px}.generator-art{height:310px}.generator{width:76%;height:190px}.hero:after{right:-230px}
-.quick .container{grid-template-columns:1fr 1fr}.quick-item:nth-child(2n){border-right:0}.quick-item:nth-last-child(-n+1){border-bottom:0}
-.grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}
+.section-head{text-align:center;max-width:720px;margin:0 auto 43px}
+.section-head .eyebrow{color:#bd8900}
+.section-head h2{font-size:38px;line-height:1.15;margin:8px 0 11px}
+.section-head p{color:var(--muted)}
+
+/* SERVICES */
+.services{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e1e8ef;border-radius:11px;overflow:hidden;box-shadow:0 8px 25px rgba(6,26,49,.05);transition:.22s}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(6,26,49,.11);border-color:#ffd43a}
+.card-top{height:8px;background:var(--yellow)}
+.card-body{padding:25px}
+.card-icon{width:50px;height:50px;border-radius:10px;background:#fff4c7;color:#9c7000;display:grid;place-items:center;font-size:24px;margin-bottom:17px}
+.card h3{font-size:18px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about h2{font-size:40px;line-height:1.15;margin:8px 0 18px}.about p{color:var(--muted);margin-bottom:14px}
+.checks{list-style:none;margin-top:23px}.checks li{font-weight:800;margin:10px 0}.checks li:before{content:"✓";color:#c48e00;margin-right:9px}
+.about-panel{background:var(--navy);border-radius:15px;color:#fff;padding:37px;position:relative;overflow:hidden}
+.about-panel:before{content:"BR";position:absolute;right:-15px;top:-35px;font-size:180px;font-weight:1000;color:#ffffff08}
+.about-panel h3{font-size:27px;margin-bottom:10px}.about-panel p{color:#c8d6e4;position:relative}
+.feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px;position:relative}
+.feature{background:#ffffff0d;border:1px solid #ffffff18;border-radius:9px;padding:17px 12px;text-align:center}
+.feature b{display:block;color:var(--yellow);font-size:20px}.feature span{font-size:11px;color:#d2dce7}
+
+/* CTA */
+.cta{background:linear-gradient(105deg,#08233d,#0b466e);color:#fff;text-align:center}
+.cta h2{font-size:39px}.cta p{color:#d3e1ec;margin:7px 0 23px}
+
+/* CONTACT */
+.contact{background:var(--bg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{background:#fff;border:1px solid #e1e8ef;border-radius:12px;padding:30px}
+.contact-card h3{font-size:23px;margin-bottom:18px}
+.contact-line{display:flex;gap:13px;margin:18px 0}
+.contact-line svg{width:21px;height:21px;fill:#0b4a79;flex:0 0 auto;margin-top:3px}
+.contact-line strong{display:block}.contact-line span{color:var(--muted);font-size:14px}
+.contact-line a:hover{color:#bd8900}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.whatsapp{background:var(--green);color:#fff}
+.whatsapp:hover{background:#128a46}
+.wa-icon{width:20px;height:20px;fill:currentColor}
+
+/* FOOTER */
+footer{background:#041426;color:#b9c8d7;padding:35px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:40px;padding-bottom:27px}
+.footer-title{color:#fff;font-weight:900;margin-bottom:10px}.footer-brand{font-size:21px;color:#fff;font-weight:1000}.footer-brand span{color:var(--yellow)}
+footer p,footer a{font-size:13px}footer a:hover{color:var(--yellow)}
+.copyright{border-top:1px solid #ffffff14;padding-top:17px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:12px}
+
+/* FLOAT WHATSAPP */
+.float-wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;z-index:999;box-shadow:0 8px 24px #0005}
+.float-wa svg{width:29px;height:29px;fill:currentColor}
+.float-wa:hover{transform:scale(1.06)}
+
+/* MOBILE */
+@media(max-width:950px){
+.links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;padding:18px 5%;box-shadow:0 12px 25px #0002;flex-direction:column;align-items:flex-start;gap:18px}
+.links.open{display:flex}.menu{display:block}
+.hero .container{grid-template-columns:1fr;padding-top:60px;padding-bottom:45px}.machine{height:290px}
+.grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}
+.quick .container{grid-template-columns:repeat(3,1fr)}
+.quick-item:nth-child(3){border-right:0}.quick-item:nth-child(n+4){border-top:1px solid #e5ebf1}
 }
-@media(max-width:560px){
-.nav{height:68px}.logo-mark{width:45px;height:45px}.logo-text b{font-size:19px}.hero h1{font-size:43px}.hero p{font-size:16px}.generator-art{height:250px}.generator{width:72%;height:155px}.gen-side{right:-35px;width:65px}.quick .container{grid-template-columns:1fr}.quick-item{border-right:0;border-bottom:1px solid #e7edf3}.grid{grid-template-columns:1fr}section{padding:62px 0}.section-title h2,.about h2,.cta h2{font-size:31px}.float-wa{right:12px;bottom:12px}
+@media(max-width:600px){
+.container{width:min(94%,520px)}
+.topbar{font-size:11px}
+.topbar .container{min-height:36px;gap:18px}
+.nav{height:68px}.logo-mark{width:45px;height:45px}.logo-name{font-size:18px}.logo-name small{font-size:8px}
+.links{top:68px}
+.hero .container{padding-top:48px}.hero h1{font-size:43px;letter-spacing:-1.5px}.hero p{font-size:15px}
+.actions .btn{width:100%}.trust{gap:13px;font-size:11px}.machine{height:235px}.generator{width:82%;height:145px}.generator .door{top:17px;bottom:17px}.generator .grill{top:28px;height:58px}.generator .brandmark{font-size:23px;right:16px;bottom:17px}
+.quick{margin-top:-20px}.quick .container{grid-template-columns:1fr 1fr}.quick-item{padding:16px 8px}.quick-item:nth-child(2n){border-right:0}.quick-item:nth-child(n+3){border-top:1px solid #e5ebf1}
+section{padding:60px 0}.section-head h2,.about h2,.cta h2{font-size:31px}.grid{grid-template-columns:1fr}.about-panel{padding:27px}.feature-row{grid-template-columns:1fr}
+.contact-actions .btn{width:100%}.footer-grid{grid-template-columns:1fr;gap:25px}.copyright{display:block}.copyright div+div{margin-top:6px}
+.float-wa{width:52px;height:52px;right:15px;bottom:15px}
 }
 </style>
 </head>
 <body>
 
+<!-- MOBILE-FRIENDLY CONTACT BAR -->
 <div class="topbar">
   <div class="container">
-    <span>📞 +91-9845247595</span>
-    <span>✉ humayunpasha978@gmail.com</span>
-    <span>📍 Bengaluru, Karnataka</span>
+    <span class="top-item">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.8 21 3 12.2 3 2.8c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.2 1.1l-1.8 2.2z"/></svg>
+      <a href="tel:+919845247595">+91-9845247595</a>
+    </span>
+    <span class="top-item">
+      <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm10 7 8-5H4l8 5zm0 2L4 9v8h16V9l-8 5z"/></svg>
+      <a href="mailto:humayunpasha978@gmail.com">humayunpasha978@gmail.com</a>
+    </span>
+    <span class="top-item">
+      <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+      <span>26/6 Tippu Chowke, Mangamana Palya, Bommanahalli, Bengaluru - 560068</span>
+    </span>
   </div>
 </div>
 
 <header>
 <div class="container nav">
-  <a class="logo" href="#home" aria-label="BR Power Generators">
+  <a class="logo" href="#home">
     <span class="logo-mark"></span>
-    <span class="logo-text"><b>BR</b><span>POWER GENERATORS</span></span>
+    <span class="logo-name">BR<small>POWER GENERATORS</small></span>
   </a>
   <button class="menu" aria-label="Open menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
   <nav class="links">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-    <a class="nav-cta" href="#contact">Get a Quote →</a>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+    <a class="quote" href="#contact">Get a Quote →</a>
   </nav>
 </div>
 </header>
@@ -119,20 +194,20 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
 <section class="hero" id="home">
 <div class="container">
   <div>
-    <div class="eyebrow">Reliable Power Solutions</div>
-    <h1>Reliable Power<br><span>for Every Need</span></h1>
-    <p>BR Power Generators provides dependable generator sales, rental, installation, AMC, maintenance and DG servicing for businesses and operations.</p>
+    <div class="eyebrow">Trusted Generator Solutions</div>
+    <h1>Uninterrupted Power for a <span>Brighter Tomorrow</span></h1>
+    <p>Reliable generator sales, rental, AMC, installation and DG servicing for businesses, projects and power backup requirements.</p>
     <div class="actions">
       <a class="btn btn-yellow" href="tel:+919845247595">☎ Call Now</a>
-      <a class="btn btn-dark" href="https://wa.me/919845247595" target="_blank" rel="noopener">◉ WhatsApp Us</a>
+      <a class="btn btn-outline" href="https://wa.me/919845247595" target="_blank" rel="noopener">WhatsApp Us</a>
     </div>
-    <div class="trust"><span>Trusted Service</span><span>Customer Focused</span><span>Power Support</span></div>
+    <div class="trust"><span>Reliable Performance</span><span>Expert Support</span><span>Customer Focused</span></div>
   </div>
-  <div class="generator-art" aria-label="Generator illustration">
+  <div class="machine">
     <div class="gen-shadow"></div>
     <div class="generator">
-      <div class="gen-top"></div><div class="gen-wheel one"></div><div class="gen-wheel two"></div>
-      <div class="gen-side"><i></i></div>
+      <div class="top"></div><div class="door"></div><div class="grill"></div>
+      <div class="brandmark"><b>ϟ</b>BR</div><div class="wheel w1"></div><div class="wheel w2"></div>
     </div>
   </div>
 </div>
@@ -150,14 +225,12 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
 
 <section class="services" id="services">
 <div class="container">
-  <div class="section-title"><div class="eyebrow">What We Do</div><h2>Complete Generator Solutions</h2><p>From selecting the right generator to keeping it ready when you need it.</p></div>
+  <div class="section-head"><div class="eyebrow">Our Expertise</div><h2>Core Power Services</h2><p>Reliable solutions for your generator and backup power requirements.</p></div>
   <div class="grid">
-    <article class="card"><div class="card-icon">⚡</div><h3>Generator Sales</h3><p>Generator solutions for commercial, industrial and backup power requirements.</p></article>
-    <article class="card"><div class="card-icon">▣</div><h3>Generator Rental</h3><p>Flexible rental options for projects, events, temporary power and backup requirements.</p></article>
-    <article class="card"><div class="card-icon">⚒</div><h3>AMC & Maintenance</h3><p>Preventive maintenance and annual service support for dependable generator operation.</p></article>
-    <article class="card"><div class="card-icon">⚙</div><h3>Generator Installation</h3><p>Professional installation, setup and commissioning support for generator systems.</p></article>
-    <article class="card"><div class="card-icon">🔧</div><h3>DG Servicing</h3><p>Service, inspection and troubleshooting support for diesel generator sets.</p></article>
-    <article class="card"><div class="card-icon">✓</div><h3>Power Support</h3><p>Practical assistance to keep your backup power system reliable and ready.</p></article>
+    <article class="card"><div class="card-top"></div><div class="card-body"><div class="card-icon">⚡</div><h3>Generator Sales</h3><p>Generator solutions for commercial, industrial and backup power requirements.</p></div></article>
+    <article class="card"><div class="card-top"></div><div class="card-body"><div class="card-icon">▣</div><h3>Generator Rental</h3><p>Flexible rental solutions for projects, events, temporary power and backup needs.</p></div></article>
+    <article class="card"><div class="card-top"></div><div class="card-body"><div class="card-icon">⚒</div><h3>AMC & Maintenance</h3><p>Preventive maintenance and annual service support for dependable operation.</p></div></article>
+    <article class="card"><div class="card-top"></div><div class="card-body"><div class="card-icon">⚙</div><h3>Installation</h3><p>Professional installation, setup and commissioning support for generator systems.</p></div></article>
   </div>
 </div>
 </section>
@@ -166,9 +239,9 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
 <div class="container about-grid">
   <div>
     <div class="eyebrow">BR Power Generators</div>
-    <h2>Keeping Your Power Running.</h2>
-    <p>We focus on reliable power solutions, responsive service and practical support for generator requirements.</p>
-    <p>Whether you need a generator for purchase, rental, installation or ongoing maintenance, our goal is simple: dependable power when you need it.</p>
+    <h2>Powering Businesses. Supporting Growth.</h2>
+    <p>We provide practical generator solutions with a focus on dependable performance, responsive service and customer satisfaction.</p>
+    <p>From generator sales and rental to installation, AMC and DG servicing, we help keep your power systems ready when you need them.</p>
     <ul class="checks">
       <li>Sales & rental solutions</li>
       <li>Installation & commissioning support</li>
@@ -176,14 +249,13 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
       <li>DG servicing & troubleshooting</li>
     </ul>
   </div>
-  <div class="panel">
-    <h3>Why BR Power Generators?</h3>
-    <p>A single point of contact for generator sales, rental and service requirements.</p>
-    <div class="stats">
-      <div class="stat"><b>24/7</b><span>Power support focus</span></div>
-      <div class="stat"><b>360°</b><span>Generator solutions</span></div>
-      <div class="stat"><b>5+</b><span>Core services</span></div>
-      <div class="stat"><b>100%</b><span>Customer focused</span></div>
+  <div class="about-panel">
+    <h3>Reliable Power. Always.</h3>
+    <p>A single point of contact for generator sales, rental, installation and service requirements.</p>
+    <div class="feature-row">
+      <div class="feature"><b>Sales</b><span>Power solutions</span></div>
+      <div class="feature"><b>Rental</b><span>Flexible options</span></div>
+      <div class="feature"><b>Service</b><span>Ongoing support</span></div>
     </div>
   </div>
 </div>
@@ -191,30 +263,42 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
 
 <section class="cta">
 <div class="container">
-  <h2>Need Reliable Backup Power?</h2>
-  <p>Tell us your generator requirement and get in touch with BR Power Generators.</p>
+  <div class="eyebrow">Need Power Support?</div>
+  <h2>Let's Find the Right Generator Solution.</h2>
+  <p>Contact BR Power Generators for sales, rental, installation or servicing enquiries.</p>
   <a class="btn btn-yellow" href="#contact">Request a Quote →</a>
 </div>
 </section>
 
 <section class="contact" id="contact">
 <div class="container">
-  <div class="section-title"><div class="eyebrow">Get In Touch</div><h2>Contact BR Power Generators</h2><p>Call, WhatsApp or email us for sales, rental, installation and service enquiries.</p></div>
+  <div class="section-head"><div class="eyebrow">Get In Touch</div><h2>Contact BR Power Generators</h2><p>Call, WhatsApp or email us for your generator requirements.</p></div>
   <div class="contact-grid">
     <div class="contact-card">
       <h3>Business Information</h3>
-      <div class="contact-line"><div class="ci">📞</div><div><strong>Phone / WhatsApp</strong><span><a href="tel:+919845247595">+91-9845247595</a></span></div></div>
-      <div class="contact-line"><div class="ci">✉</div><div><strong>Email</strong><span><a href="mailto:humayunpasha978@gmail.com">humayunpasha978@gmail.com</a></span></div></div>
-      <div class="contact-line"><div class="ci">📍</div><div><strong>Address</strong><span>26/6 Tippu Chowke, Mangamana Palya,<br>Bommanahalli, Bengaluru - 560068</span></div></div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.7 15.7 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.8 21 3 12.2 3 2.8c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.4 0 .8-.2 1.1l-1.8 2.2z"/></svg>
+        <div><strong>Phone / WhatsApp</strong><span><a href="tel:+919845247595">+91-9845247595</a></span></div>
+      </div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm10 7 8-5H4l8 5zm0 2L4 9v8h16V9l-8 5z"/></svg>
+        <div><strong>Email</strong><span><a href="mailto:humayunpasha978@gmail.com">humayunpasha978@gmail.com</a></span></div>
+      </div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+        <div><strong>Address</strong><span>26/6 Tippu Chowke, Mangamana Palya,<br>Bommanahalli, Bengaluru - 560068</span></div>
+      </div>
     </div>
     <div class="contact-card">
-      <h3>Let's Discuss Your Requirement</h3>
-      <p style="color:#64748b">For generator sales, rental, AMC, installation or DG servicing, contact us directly.</p>
-      <div class="actions">
+      <h3>Talk to Us</h3>
+      <p style="color:#64748b">Tell us your generator capacity, application or service requirement. We'll be happy to discuss the right solution.</p>
+      <div class="contact-actions">
         <a class="btn btn-yellow" href="tel:+919845247595">☎ Call Now</a>
-        <a class="btn" style="background:#16a34a;color:#fff" href="https://wa.me/919845247595" target="_blank" rel="noopener">◉ WhatsApp</a>
+        <a class="btn whatsapp" href="https://wa.me/919845247595" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20 3.9A11.8 11.8 0 0 0 12.05.5C5.55.5.26 5.77.26 12.25c0 2.07.54 4.09 1.57 5.87L.17 23.5l5.52-1.62a11.75 11.75 0 0 0 6.36 1.85h.01c6.5 0 11.77-5.28 11.77-11.77A11.7 11.7 0 0 0 20 3.9zm-7.94 17.8h-.01a9.73 9.73 0 0 1-4.96-1.36l-.36-.21-3.28.96.98-3.2-.23-.37a9.72 9.72 0 1 1 7.86 4.18zm5.33-7.29c-.29-.15-1.71-.84-1.98-.93-.27-.1-.46-.15-.65.15-.19.29-.74.93-.91 1.12-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.65-1.56-.89-2.14-.24-.58-.48-.5-.65-.51h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43s1.04 2.82 1.18 3.02c.15.2 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.27-.2-.56-.34z"/></svg>
+          WhatsApp
+        </a>
       </div>
-      <p style="margin-top:25px;color:#64748b;font-size:13px">Email: <a href="mailto:humayunpasha978@gmail.com" style="color:#0b4f82;font-weight:800">humayunpasha978@gmail.com</a></p>
     </div>
   </div>
 </div>
@@ -222,13 +306,22 @@ footer{background:#06172e;color:#b9c8d7;padding:28px 0}.footer-flex{display:flex
 </main>
 
 <footer>
-<div class="container footer-flex">
-  <div><div class="footer-brand">BR POWER GENERATORS</div><small>Reliable Power. Reliable Service.</small></div>
-  <div>© <span id="year"></span> BR Power Generators. All rights reserved.</div>
+<div class="container">
+  <div class="footer-grid">
+    <div><div class="footer-brand"><span>BR</span> POWER GENERATORS</div><p>Reliable power solutions for sales, rental, installation and service.</p></div>
+    <div><div class="footer-title">Quick Links</div><p><a href="#home">Home</a> · <a href="#services">Services</a> · <a href="#about">About</a> · <a href="#contact">Contact</a></p></div>
+    <div><div class="footer-title">Contact</div><p>+91-9845247595<br><a href="mailto:humayunpasha978@gmail.com">humayunpasha978@gmail.com</a><br>26/6 Tippu Chowke, Mangamana Palya, Bommanahalli, Bengaluru - 560068</p></div>
+  </div>
+  <div class="copyright"><div>© <span id="year"></span> BR Power Generators. All rights reserved.</div><div>Reliable Power. Always.</div></div>
 </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/919845247595" target="_blank" rel="noopener">WhatsApp</a>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<a class="float-wa" href="https://wa.me/919845247595" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M20 3.9A11.8 11.8 0 0 0 12.05.5C5.55.5.26 5.77.26 12.25c0 2.07.54 4.09 1.57 5.87L.17 23.5l5.52-1.62a11.75 11.75 0 0 0 6.36 1.85h.01c6.5 0 11.77-5.28 11.77-11.77A11.7 11.7 0 0 0 20 3.9zm-7.94 17.8h-.01a9.73 9.73 0 0 1-4.96-1.36l-.36-.21-3.28.96.98-3.2-.23-.37a9.72 9.72 0 1 1 7.86 4.18zm5.33-7.29c-.29-.15-1.71-.84-1.98-.93-.27-.1-.46-.15-.65.15-.19.29-.74.93-.91 1.12-.17.2-.34.22-.63.07-.29-.15-1.23-.45-2.35-1.43-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.65-1.56-.89-2.14-.24-.58-.48-.5-.65-.51h-.56c-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43s1.04 2.82 1.18 3.02c.15.2 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.27-.2-.56-.34z"/></svg>
+</a>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>document.querySelector(".links").classList.remove("open")));
+</script>
 </body>
 </html>
