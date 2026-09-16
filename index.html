@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR Power Generators | Generator Sales, Rental & Service</title>
+  <meta name="description" content="BR Power Generators provides generator sales, rental, AMC, maintenance, installation and DG servicing. Contact us for reliable power solutions.">
+  <meta name="keywords" content="generator sales, generator rental, DG servicing, generator AMC, generator maintenance, generator installation, BR Power Generators">
+  <meta name="theme-color" content="#111827">
+  <style>
+    :root{--dark:#111827;--dark2:#1f2937;--accent:#f59e0b;--light:#f8fafc;--text:#1f2937;--muted:#64748b}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:1000;background:rgba(17,24,39,.97);color:#fff;border-bottom:1px solid #374151}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+    .brand-mark{width:38px;height:38px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#111;font-weight:900}
+    .navlinks{display:flex;gap:24px;align-items:center}
+    .navlinks a{font-size:.95rem;color:#e5e7eb}.navlinks a:hover{color:var(--accent)}
+    .menu{display:none;background:none;border:0;color:white;font-size:28px}
+    .hero{min-height:650px;background:linear-gradient(90deg,rgba(2,6,23,.93),rgba(2,6,23,.68),rgba(2,6,23,.35)),linear-gradient(135deg,#111827,#334155);color:#fff;display:flex;align-items:center}
+    .hero-content{max-width:760px;padding:85px 0}
+    .eyebrow{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.85rem}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.05;margin:16px 0 22px}
+    .hero p{font-size:1.15rem;color:#e5e7eb;max-width:680px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{padding:13px 22px;border-radius:7px;font-weight:800;display:inline-block}
+    .btn-primary{background:var(--accent);color:#111827}.btn-primary:hover{background:#fbbf24}
+    .btn-outline{border:1px solid #cbd5e1;color:#fff}.btn-outline:hover{background:#fff;color:#111827}
+    section{padding:80px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+    .section-head h2{font-size:2.2rem;color:var(--dark);margin-bottom:10px}
+    .section-head p{color:var(--muted)}
+    .services{background:var(--light)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:28px;box-shadow:0 8px 25px rgba(15,23,42,.05)}
+    .icon{width:48px;height:48px;border-radius:10px;background:#fff3d6;color:#b45309;display:grid;place-items:center;font-size:24px;margin-bottom:18px}
+    .card h3{margin-bottom:8px;color:var(--dark)}
+    .card p{color:var(--muted)}
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .about h2{font-size:2.2rem;color:var(--dark);margin-bottom:18px}
+    .about p{color:var(--muted);margin-bottom:15px}
+    .ticks{list-style:none;margin-top:20px}.ticks li{margin:10px 0;font-weight:700}.ticks li:before{content:"✓";color:#d97706;margin-right:10px}
+    .cta{background:var(--dark);color:#fff;text-align:center}.cta h2{font-size:2.3rem;margin-bottom:12px}.cta p{color:#cbd5e1}
+    .contact{background:var(--light)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:30px}
+    .contact-box h3{margin-bottom:18px;color:var(--dark)}
+    .contact-item{margin:15px 0}.contact-item strong{display:block;color:var(--dark)}
+    footer{background:#0b1120;color:#cbd5e1;padding:28px 0;text-align:center;font-size:.9rem}
+    .float{position:fixed;right:20px;bottom:20px;background:#16a34a;color:#fff;padding:14px 18px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px rgba(0,0,0,.25);z-index:999}
+    @media(max-width:800px){
+      .navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#111827;padding:20px;flex-direction:column;align-items:flex-start}
+      .navlinks.open{display:flex}.menu{display:block}
+      .grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero{min-height:580px}.hero-content{padding:70px 0}
+      section{padding:60px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home"><span class="brand-mark">BR</span><span>BR Power Generators</span></a>
+      <button class="menu" aria-label="Menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+      <div class="navlinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">Reliable Power Solutions</div>
+      <h1>Power You Can Depend On.</h1>
+      <p>BR Power Generators provides generator sales, rental, installation, AMC, maintenance and DG servicing for dependable backup power solutions.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#contact">Get a Quote</a>
+        <a class="btn btn-outline" href="#services">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Our Services</h2>
+      <p>Complete generator solutions from selection and installation to ongoing maintenance.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="icon">⚡</div><h3>Generator Sales</h3><p>Generator solutions selected for commercial, industrial and other power backup requirements.</p></article>
+      <article class="card"><div class="icon">▣</div><h3>Generator Rental</h3><p>Flexible generator rental solutions for projects, events, temporary power and backup requirements.</p></article>
+      <article class="card"><div class="icon">🛠</div><h3>AMC & Maintenance</h3><p>Planned maintenance and annual service support to keep your generator dependable.</p></article>
+      <article class="card"><div class="icon">⚙</div><h3>Installation</h3><p>Professional generator installation support including setup, commissioning and related requirements.</p></article>
+      <article class="card"><div class="icon">🔧</div><h3>DG Servicing</h3><p>Service and troubleshooting support for diesel generator sets and associated systems.</p></article>
+      <article class="card"><div class="icon">✓</div><h3>Power Support</h3><p>Practical support for maintaining reliable backup power for your business and operations.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="eyebrow">BR Power Generators</div>
+      <h2>Reliable support for your power requirements.</h2>
+      <p>We provide end-to-end generator services with a focus on dependable operation, responsive service and practical solutions.</p>
+      <ul class="ticks">
+        <li>Sales and rental solutions</li>
+        <li>Installation and commissioning support</li>
+        <li>AMC and preventive maintenance</li>
+        <li>DG servicing and troubleshooting</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Why choose us?</h3>
+      <p>From selecting the right generator to keeping it ready when you need it, BR Power Generators is focused on dependable service and long-term support.</p>
+      <br>
+      <p><strong>Need a generator solution?</strong><br>Contact us to discuss your requirement.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Need Reliable Backup Power?</h2>
+    <p>Talk to BR Power Generators about sales, rental, installation or servicing.</p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn btn-primary" href="#contact">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Us</h2><p>Update the placeholders below with your actual business details before launch.</p></div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Business Details</h3>
+        <div class="contact-item"><strong>Phone</strong><span>+91 XXXXXXXXXX</span></div>
+        <div class="contact-item"><strong>Email</strong><span>info@brpowergenerators.online</span></div>
+        <div class="contact-item"><strong>Location</strong><span>Your business address</span></div>
+      </div>
+      <div class="contact-box">
+        <h3>Request a Quote</h3>
+        <p>Call or WhatsApp us with your generator capacity, application and rental/service requirement.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="tel:+91XXXXXXXXXX">Call Now</a>
+          <a class="btn" style="background:#16a34a;color:#fff" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year"></span> BR Power Generators. All rights reserved.</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
